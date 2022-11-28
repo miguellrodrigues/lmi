@@ -13,8 +13,8 @@ np.set_printoptions(precision=3, suppress=True)
 A = np.array([
   [0, 0, 1, 0],
   [0, 0, 0, 1],
-  [-5.5, -2.5, -5, -1],
-  [-2.5, -5.5, -1, -5]
+  [-5.5, -2.5, 5, -1],
+  [-2.5, -5.5, -1, 5]
 ])
 
 B = np.array([
@@ -32,8 +32,8 @@ m = B.shape[1]
 
 # #
 
-alpha = .8
-beta = 1
+alpha = .1
+beta = 4
 
 # #
 

@@ -13,8 +13,8 @@ np.set_printoptions(precision=3, suppress=True)
 A = np.array([
   [0, 0, 1, 0],
   [0, 0, 0, 1],
-  [-5.5, -2.5, -5, -1],
-  [-2.5, -5.5, -1, -5]
+  [-5.5, -2.5, 5, -1],
+  [-2.5, -5.5, -1, 5]
 ])
 
 B = np.array([
@@ -37,7 +37,7 @@ Z = cvx.Variable((m, n))
 
 
 alpha = .0
-theta = np.pi/4
+theta = np.radians(75)
 r = 4.2
 
 LMI1 = cvx.bmat([
@@ -70,7 +70,7 @@ def plot(_eig_vals):
   plt.scatter(_eig_vals.real, _eig_vals.imag, marker='x', color='red')
   plt.xlabel('Real')
   plt.ylabel('Imaginary')
-  plt.title('Eigenvalues of A')
+  plt.title('Eigenvalues of Acl')
 
   # plot a semicircle centered at origin with radius r (dotted style)
   t = np.linspace(0, np.pi, 100)
