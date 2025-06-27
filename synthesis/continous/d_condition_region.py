@@ -2,12 +2,6 @@ import cvxpy as cvx
 import matplotlib.pyplot as plt
 import numpy as np
 
-plt.style.use([
-  'science',
-  'notebook',
-  'grid'
-])
-
 np.set_printoptions(precision=3, suppress=True)
 
 A = np.array([
